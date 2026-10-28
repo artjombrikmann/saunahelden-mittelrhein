@@ -1,6 +1,6 @@
 import { CalendarDays, MapPin, Truck, Caravan } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
-import { HeroScene } from "./HeroScene";
+import Image from "next/image";
 
 const USPS = [
   { Icon: Caravan, title: "Fasssauna", text: "auf dem Anhänger" },
@@ -36,7 +36,14 @@ export function Hero() {
           </div>
         </div>
         <div className="scene">
-          <HeroScene />
+          <Image
+            src="/images/sauna-am-rhein.webp"
+            alt="Fasssauna mit beleuchtetem Innenraum am Rheinufer bei Dämmerung, im Hintergrund die Hügel des Mittelrheintals"
+            width={564}
+            height={564}
+            priority
+            sizes="(max-width: 960px) 100vw, 480px"
+          />
           <div className="tag">
             <div><small>Standort Mittelrhein</small><b>Boppard und Umgebung</b></div>
             <div className="pr">ab 89 €<em>pro Tag, Beispielpreis</em></div>

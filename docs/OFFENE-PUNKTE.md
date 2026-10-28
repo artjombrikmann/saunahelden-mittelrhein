@@ -3,7 +3,7 @@
 ## Vom Kunden zu liefern
 - [ ] Echte Preise, Tarife, Extras, Lieferzonen und Lieferpreise (aktuell Platzhalter in `lib/pricing.ts`)
 - [ ] Technische Daten der Sauna (Ofentyp, Personenzahl, Maße, Gewicht, Strombedarf), Anforderungen an Standplatz und Zugfahrzeug (Bereich "folgt" auf der Seite)
-- [ ] Echte Fotos und Videos (Hero-Szene `HeroScene` ist eine SVG-Illustration)
+- [ ] Echte Fotos und Videos in voller Auflösung. Das Hero-Bild (`public/images/sauna-am-rhein.webp`) ist ein Ausschnitt des vom Auftraggeber gelieferten Bildes (1020 px breit). Bildquelle und Nutzungsrecht klären, das Motiv wirkt KI-generiert: Wenn es nicht die echte Sauna zeigt, durch ein echtes Foto ersetzen (Irreführungsrisiko).
 - [ ] Logo mit transparentem Hintergrund (Original ist ein 1024×1024-PNG auf weißem Grund, Varianten per `scripts/make-logo.mjs`)
 - [ ] FAQ-Antworten (aktuell Platzhalter)
 - [ ] Verfügbarkeitspflege: wer trägt belegte Tage ein (aktuell statische Beispielliste in `lib/availability.ts`)

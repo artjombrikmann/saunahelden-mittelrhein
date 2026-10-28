@@ -94,7 +94,7 @@ nav.main a:hover { color: var(--cream); border-color: var(--fire-light); }
 @media (max-width: 560px) { .usp { grid-template-columns: 1fr 1fr; } }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .scene { position: relative; border: 2px solid var(--border); border-radius: 20px; overflow: hidden; background: var(--surface-low); box-shadow: 0 10px 40px -8px rgba(215, 38, 30, 0.3); }
-.scene svg { width: 100%; height: auto; }
+.scene svg, .scene img { width: 100%; height: auto; display: block; }
 .scene .tag { margin: 0 16px 16px; background: rgba(22, 38, 63, 0.92); backdrop-filter: blur(6px); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
 .scene .tag small { display: block; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
 .scene .tag b { color: var(--cream); font-weight: 600; }
