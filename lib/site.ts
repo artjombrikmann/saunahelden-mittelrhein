@@ -1,0 +1,15 @@
+export const SITE = {
+  name: "Saunahelden Mittelrhein",
+  tagline: "Mobile Fasssauna Boppard",
+  phone: "+49 163 9010 603",
+  phoneHref: "tel:+491639010603",
+  whatsappHref: "https://wa.me/491639010603",
+  email: "saunahelden-mr@outlook.de",
+  city: "Boppard",
+  region: "Rheinland-Pfalz",
+  instagramHandle: "@saunaheldenmittelrhein",
+  instagramUrl: "https://www.instagram.com/saunaheldenmittelrhein",
+  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "http://localhost:3000",
+  indexing: process.env.NEXT_PUBLIC_INDEXING === "true",
+  rentalStart: "2026-11-01",
+} as const;

@@ -1,0 +1,13 @@
+import { chromium } from "playwright";
+const base = process.argv[2] ?? "http://localhost:3838";
+const b = await chromium.launch();
+const p = await (await b.newContext({ viewport: { width: 390, height: 844 } })).newPage();
+await p.goto(base, { waitUntil: "networkidle" });
+await p.screenshot({ path: ".shots/m1-hero.png" });
+await p.locator("#kalender").scrollIntoViewIfNeeded();
+await p.getByRole("button", { name: /Do\., 5\. November 2026, frei/ }).click();
+await p.getByRole("button", { name: /So\., 8\. November 2026, frei/ }).click();
+await p.locator("#kalender").screenshot({ path: ".shots/m2-kalender.png" });
+const overflow = await p.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+console.log("Horizontaler Overflow (px):", overflow);
+await b.close();
